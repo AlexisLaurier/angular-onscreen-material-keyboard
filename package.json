@@ -22,7 +22,8 @@
     "build:docs": "compodoc ./src/core -p ./tsconfig.json --silent --disableCoverage --disablePrivateOrInternalSupport --theme readthedocs --output ./dist/docs",
     "test": "ng test",
     "lint": "ng lint",
-    "postinstall": "npm rebuild node-sass"
+    "postinstall": "npm rebuild node-sass",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "@angular-devkit/architect": "^0.1100.1",
